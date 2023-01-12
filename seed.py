@@ -31,14 +31,17 @@ try:
     print("Customer table was created successfully.")
    # use cursor.execute to execute insert_customers function
     cursor.execute(insert_customers)
+    connection.commit()
    # commit the changes to the database using connection.commit()
     print("Customer information was inserted successfully.")
    # use cursor.execute to execute create_invoices function
     cursor.execute(create_invoices)
+    connection.commit()
    # commit the changes to the database using connection.commit()
     print("Invoices table was created successfully.")
    # use cursor.execute to execute insert_invoices function
     cursor.execute(insert_invoices) 
+    connection.commit()
    # commit the changes to the database using connection.commit()
     print("Invoices were inserted successfully")
 
