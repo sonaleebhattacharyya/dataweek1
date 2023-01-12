@@ -1,6 +1,4 @@
 ############################# TO DO #####################################
-import matplotlib.pyplot as plt
-
 # write import statement for psycopg2
 import psycopg2
 # write import statement to import Error from psycopg2
@@ -8,6 +6,7 @@ from psycopg2 import Error
 # import the get_connected function from your database.py file
 from database import get_connected
 # import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 
 try:
     # connection to database
@@ -19,10 +18,10 @@ try:
 ############################# TO DO #####################################
 
 ##### create product_revenue_query with the query from parts 3 and 4 which get the total revenue from each product category
-    product_revenue_query = """ SELECT product_category, 
-                            SUM(unit_price*quantity) FROM invoices
-                            GROUP BY product_category; 
-                        """
+    product_revenue_query = """ SELECT product_category, SUM(unit_price*quantity) FROM invoices
+                                GROUP BY product_category
+                                ORDER BY SUM DESC """
+
 #### follow the project directions to create a function called get_revenue which fetches the results from the product_revenue_query
     def get_revenue(): 
         with connection: 
@@ -43,7 +42,7 @@ try:
 
     while count < (len(product_revenue)): 
         product_categories.append(product_revenue[index][0])
-        total_revenue.append(int())
+        total_revenue.append(int(product_revenue[index][1]))
         count += 1
         index += 1
 

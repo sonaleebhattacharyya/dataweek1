@@ -22,8 +22,6 @@ INSERT INTO invoices (stock_code, product_category, unit_price, quantity, custom
 INSERT INTO invoices (stock_code, product_category, unit_price, quantity, customer_id) VALUES ('GAAUWTZ3', 'Automotive', 66.82, 49, 17);
 INSERT INTO invoices (stock_code, product_category, unit_price, quantity, customer_id) VALUES ('1SS9NJ9K', 'Electronics', 98.77, 68, 81);
 INSERT INTO invoices (stock_code, product_category, unit_price, quantity, customer_id) VALUES ('NDZG97KF', 'Movies', 58.79, 20, 98);
-INSERT INTO invoices (stock_code, product_category, unit_price, quantity, customer_id) VALUES ('TZHHI4W3', 'Games', 38.06, 89, 80);
-INSERT INTO invoices (stock_code, product_category, unit_price, quantity, cust_code, product_category, unit_price, quantity, customer_id) VALUES ('NDZG97KF', 'Movies', 58.79, 20, 98);
 INSERT INTO invoices (stock_code, product_category, unit_price, quantity, customer_id) VALUES ('132GF5KU', 'Music', 93.89, 34, 231);
 INSERT INTO invoices (stock_code, product_category, unit_price, quantity, customer_id) VALUES ('WQTVJFVD', 'Sports', 31.6, 74, 61);
 INSERT INTO invoices (stock_code, product_category, unit_price, quantity, customer_id) VALUES ('ZKS41NB5', 'Clothing', 10.96, 82, 37);
@@ -86,7 +84,9 @@ INSERT INTO invoices (stock_code, product_category, unit_price, quantity, custom
 INSERT INTO invoices (stock_code, product_category, unit_price, quantity, customer_id) VALUES ('DZ93K9SA', 'Home', 14.61, 49, 206);
 INSERT INTO invoices (stock_code, product_category, unit_price, quantity, customer_id) VALUES ('O079273Y', 'Clothing', 28.07, 73, 7);
 INSERT INTO invoices (stock_code, product_category, unit_price, quantity, customer_id) VALUES ('URYLLK2L', 'Automotive', 93.0, 22, 105);
-INSERT INTO invoices (stock_code, product_category, unit_price, quantity, customer_id) VALUES ('J21MMJB9', 'Clothing', 84.96, 43, 189);omer_id) VALUES ('MUH9IKPM', 'Home', 117.68, 62, 144);
+INSERT INTO invoices (stock_code, product_category, unit_price, quantity, customer_id) VALUES ('J21MMJB9', 'Clothing', 84.96, 43, 189);
+INSERT INTO invoices (stock_code, product_category, unit_price, quantity, customer_id) VALUES ('TZHHI4W3', 'Games', 38.06, 89, 80);
+INSERT INTO invoices (stock_code, product_category, unit_price, quantity, customer_id) VALUES ('MUH9IKPM', 'Home', 117.68, 62, 144);
 INSERT INTO invoices (stock_code, product_category, unit_price, quantity, customer_id) VALUES ('3TXN8R6T', 'Home', 146.75, 44, 180);
 INSERT INTO invoices (stock_code, product_category, unit_price, quantity, customer_id) VALUES ('M5V1V7PD', 'Kids', 9.14, 76, 190);
 INSERT INTO invoices (stock_code, product_category, unit_price, quantity, customer_id) VALUES ('6YRIB5CP', 'Computers', 125.69, 59, 186);

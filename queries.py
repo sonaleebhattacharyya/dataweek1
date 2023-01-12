@@ -14,15 +14,15 @@ try:
     ############# SQL QUERIES TO EXTRACT INFORMATION #################
 
     #### create master_query variable
-    master_query = """ SELECT * FROM invoices 
+    master_query = """SELECT * FROM invoices 
                        JOIN customers 
-                       ON invoices.customer_id = customers.id """
+                       ON invoices.customer_id = customers.id"""
     #### create outdoors_query variable
-    outdoors_query = """ SELECT * FROM invoices
+    outdoors_query = """SELECT * FROM invoices
                      JOIN customers ON invoices.customer_id = customers.id 
-                     WHERE invoices.product_category = 'Outdoors' """
+                     WHERE invoices.product_category = 'Outdoors'"""
     #### create garden_query variable
-    garden_query = """ SELECT * FROM invoices
+    garden_query = """SELECT * FROM invoices
                    JOIN customers ON invoices.customer_id = customers.id 
                    WHERE invoices.product_category = 'Garden' """
 
@@ -49,15 +49,19 @@ try:
     #### create master.csv with open(...) function ####
     with open('master.csv', 'w') as file:
         cursor.copy_expert(master_output, file)
+        print("master.csv written successfully.")
     #### create outdoors.csv with open(...) function ####
     with open('outdoors.csv', 'w') as file: 
         cursor.copy_expert(outdoors_output, file)
+        print("outdoors.csv written successfully.")
     #### create garden.csv with open(...) function ####
     with open('garden.csv', 'w') as file: 
         cursor.copy_expert(garden_output, file) 
+        print("garden.csv written successfully.")
     #### create product_revenue.csv with open(...) function ####
     with open('product_revenue.csv', 'w') as file: 
-        cursor.copy_expert(product_revenue_output, file) 
+        cursor.copy_expert(product_revenue_output, file)
+        print("product_revenue.csv written successfully.")
 except (Exception, Error) as error:
     print("Error while connecting to PostgreSQL DB", error)
 
